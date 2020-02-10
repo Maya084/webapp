@@ -5,6 +5,19 @@
 if($result = mysqli_query($conn, $sql))
 {
     $br = 0;
+    $vkupno = mysqli_num_rows($result);
+    if($vkupno==0)
+    {
+?>
+    <div class="row">
+        <div class="col-12">
+            <p class="lead font-weight-bold"> Милениче со бараните карактеристики не е пронајдено. </p>
+        </div>
+    </div>
+    <?php
+    }
+    else
+    {
    
 while($row = mysqli_fetch_row($result))
 {
@@ -46,6 +59,7 @@ else
     <?php
 }
 
+}
 }
 }
 ?>
