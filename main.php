@@ -82,8 +82,10 @@
        if(!isset($_POST["choice"]))
        {
 $sql = "SELECT slika, ID from mace";
+$zivotno="mace";
 include("prikaz.php");
 $sql = "SELECT slika, ID from kuce";
+$zivotno="kuce";
 include("prikaz.php");
 
        }

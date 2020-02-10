@@ -83,13 +83,13 @@ alert('Настана грешка при креирањето на оглас. 
 
 else
 {
-	$sql2 = "SELECT ID FROM '$zivotno' ORDER BY ID DESC LIMIT 1";
-	$rezultat = mysqli_query($conn, $sql2);
-	$row = mysqli_fetch_row($rezultat);
-	$id = $row[0];
-
-		
-header("Location:zivotno.php?ID={$id}&zivotno={$zivotno}");
+	?>
+<script charset="utf-8">
+alert('Успешно креирање на оглас ');
+</script>
+<?php
+	
+header("Location:main.php");
        
     }
 	  

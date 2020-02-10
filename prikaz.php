@@ -56,6 +56,7 @@ else
                 <img style="max-width:100%" src="<?php echo $slika?>"></a>
         </div>
     </div>
+    <br>
     <?php
 }
 
